@@ -1,0 +1,57 @@
+.mainTransp {
+    background: transparent !important;
+}
+
+.hideNav {
+    display: none;
+   
+}
+
+.fadeOut {
+    display: flex !important;
+    animation: fadeOut 1s ease forwards;
+}
+  
+  .backgroundAnimated {
+    display: flex !important;
+    animation: fadeIt 1s ease forwards;
+    z-index: 0;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+      opacity: 0;
+      z-index: -1
+    }
+  }
+  
+  .txtAnimated {
+    animation: fadeItTxt 1s ease forwards;
+}
+
+@keyframes fadeIt {
+    0% {
+        background-color: transparent;
+        opacity: 0;
+    }
+    100% {
+    background-color: "white";
+    opacity: 1;
+    }
+  }
+  
+  .txtAnimated {
+    animation: fadeItTxt 1s ease forwards;
+}
+
+@keyframes fadeItTxt {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: black;
+    }
+}

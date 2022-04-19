@@ -1,0 +1,176 @@
+@import "./styles/global/Global.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.main-img {
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.section-space {
+  padding: 20px 0px;
+}
+
+.home-section-space {
+  padding: 40px 0px;
+}
+
+.main-gradient {
+  background: linear-gradient(to left, #d2b48c, #fdd9b5);
+}
+
+.main-transp {
+  background: transparent !important;
+}
+
+.appbar {
+  height: 2rem;
+  background-color: #d2b48c;
+}
+
+@include keyframes(fadeIn) {
+  0% {
+    background: transparent !important;
+  }
+  100% {
+    background: linear-gradient(to left, #d2b48c, #fdd9b5) !important;
+  }
+}
+
+@include keyframes(fadeIn) {
+  0% {
+    background: transparent !important;
+  }
+  100% {
+    background: linear-gradient(to left, #d2b48c, #fdd9b5) !important;
+  }
+}
+
+@include keyframes(fadeIn) {
+  0% {
+    background: transparent !important;
+  }
+  100% {
+    background: white;
+  }
+}
+
+.shop-btn {
+  bottom: 5%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.shop-btn > button {
+  font-size: 0.9rem;
+  background-color: #d2b48c;
+  color: whitesmoke;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.membership-com-space {
+  height: 100%;
+  margin-top: 80px;
+}
+
+.component-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 80px;
+  padding: 5px 20px;
+}
+
+@include keyframes(fadeIt) {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #d2b48c;
+  }
+}
+
+.background-nav {
+  background-color: #d2b48c;
+}
+
+.background-animated {
+  @include animation("fadeIt 1s ease");
+}
+
+.bottomBtn {
+  position: fixed !important;
+  bottom: 30px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #d2b48c;
+  color: whitesmoke;
+}
+
+.closeBtn {
+  cursor: pointer;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  margin: 0.5rem !important;
+  min-width: fit-content !important;
+  padding: 0.25rem 0.5rem !important;
+
+  &:hover {
+    transform: scale(1.08);
+    background-color: transparent !important;
+  }
+}
+
+.closeBtn > span {
+  width: fit-content;
+}
+
+// Always Show a Scrollbar when Applicable
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+  height: 4px;
+  padding-bottom: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  padding-bottom: 1rem;
+}
