@@ -1,6 +1,6 @@
 ## Development server
 
-- https://dev.lynxprotocol.com
+- https://dev.lynxprotocol.org
 
 \*\* We are using yarn instead of npm. please use yarn for adding modules and installing
 
