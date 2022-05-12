@@ -9,8 +9,8 @@ interface Props {
 
 }
 
-const description1 = "Completely custom UI/UX design with client input to perfectly capture your brand’s online presence. We create engaging user experiences that are as strong as the technology behind them. We approach user interface design from a consumer-first perspective, putting users at the heart of the products we create."
-const description2 = "Developing a successful digital product is a complex process that requires a significant amount of time applying innovative solutions, and following reliable processes. Using a streamlined and efficient development process we are able to implement beautiful and responsive user interfaces that are highly-interactive."
+const description1 = "The Lynx network has an intutive design structure that will allow for a more efficient and scalable network of applicaitons to be built to power the decentrlized economy."
+const description2 = "At the heart of our network lays our subnets built to be able to provide fastest and most secure decentrlized arcitecture for deveoplers to host any application from Live streaming to video games"
 const description3 = "Improving application exposure and increasing traffic is essential for surpassing competition. Using comprehensive analytics and optimizing application processes, we are able to increase your website's exposure on search engines to help you generate more revenue."
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -216,7 +216,7 @@ const ServicesSection = (props: Props) => {
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">
-                                            Expert User Interface Design
+                                            Speed, Scalability, Security
                                         </Typography>
                                     </Grid>
                                     <Grid style={{ display: "flex", justifyContent: "center", }} item>
@@ -273,7 +273,7 @@ const ServicesSection = (props: Props) => {
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">
-                                            Superior Development Process
+                                            Application Specific Subneworks
                                         </Typography>
                                     </Grid>
                                     <Grid style={{ display: "flex", justifyContent: "center", }} item>

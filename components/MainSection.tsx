@@ -14,8 +14,8 @@ import FixedNavBar from "./NavBars/FixedNavBar";
 
 interface Props { }
 
-const title = "Expert Full Service Website Delivery"
-const subtitle = "An experienced design and development team committed to growing online presences for brands through a completely efficient and streamlined process"
+const title = "Speed, Scalability, Security."
+const subtitle = "Lynx is a scalable and high throughput network for peer to peer exchange, dApps and digital assets."
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -369,14 +369,14 @@ const MainSection = (props: Props) => {
                           className={`${classes.callToActionButton} ${classes.mobileOnly}`}
                           onClick={() => setShowQuoteMenu(true)}
                         >
-                          Request A Quote
+                          Learn More
                         </Button>
                         <Button
                           size="large"
                           className={`${classes.callToActionButton} ${classes.desktopOnly}`}
                           onClick={() => router.push("/#contact-us")}
                         >
-                          Request A Quote
+                          Learn More
                         </Button>
                       </Grid>
                       <Grid item>
