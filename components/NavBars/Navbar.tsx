@@ -238,7 +238,7 @@ const NavBar = (props: Props) => {
                                             height={63.9}
                                             objectFit="fill"
                                             loading="eager"
-                                            onClick={() => window?.scrollTo(0, 0)}
+                                            onClick={() => window.scrollTo(0, 0)}
                                             quality={85}
                                             alt='Protocoding logo blue' />
                                     </Link>
@@ -247,58 +247,31 @@ const NavBar = (props: Props) => {
                                     <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item>
                                             <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/#services" underline="none">
-                                                Our Services
+                                                Introduction
                                             </Link>
                                         </Grid>
                                         <Grid item>
-                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/#portfolio" underline="none">
-                                                Our Portfolio
+                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/whitepaper" underline="none">
+                                                Whitepaper
                                             </Link>
                                         </Grid>
                                         <Grid item>
                                             <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/process" underline="none">
-                                                Our Process
+                                                Innovation
                                             </Link>
                                         </Grid>
-                                        {/* <Grid item>
-                                            <Button
-                                                variant="contained"
-                                                className={classes.playVideoButton}
-                                                startIcon={<PlayArrow className={classes.playIcon} />}
-                                                onClick={() => window?.open('https://youtu.be/pMSlGoKUjDY', '_blank')}
-                                            >
-                                                Watch Video
-                                            </Button>
-                                        </Grid> */}
                                         <Grid item>
-                                            <Button color="secondary" onClick={() => router.push("/contact")} className={classes.navBarButton}>Contact Us</Button>
+                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/process" underline="none">
+                                                Participate
+                                            </Link>
+                                        </Grid>
+                                        <Grid item>
+                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/process" underline="none">
+                                                FAQ
+                                            </Link>
                                         </Grid>
                                     </Grid>
                                 </Grid>
-                                {/* <Grid item>
-                                                <Button
-                                                    variant="contained"
-                                                    className={classes.playVideoButton}
-                                                    startIcon={<PlayArrow className={classes.playIcon} />}
-                                                >
-                                                    Watch Video
-                                                </Button>
-                                            </Grid> */}
-
-                                {/* <Grid item>
-                                            <Button
-                                                variant="contained"
-                                                className={classes.playVideoButton}
-                                                startIcon={<PlayArrow className={classes.playIcon} />}
-                                            >
-                                                Watch Video
-                                            </Button>
-                                            </Grid>
-                                            <Grid item>
-                                            <Link href="/#contact-us">
-                                                <Button className={classes.navBarButton}>Contact Us</Button>
-                                            </Link>
-                                        </Grid> */}
                                 <Grid className={classes.mobileNavContainer} item>
                                     <IconButton onClick={toggleDrawer(drawerState)}>
                                         <Menu className={classes.mobileMenuButton} />

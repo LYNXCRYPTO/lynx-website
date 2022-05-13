@@ -14,8 +14,8 @@ import FixedNavBar from "./NavBars/FixedNavBar";
 
 interface Props { }
 
-const title = "Speed, Scalability, Security."
-const subtitle = "Lynx is a scalable and high throughput network for peer to peer exchange, dApps and digital assets."
+const title = "A Truly Open and Decentralized Internet"
+const subtitle = "Lynx is a scalable and high throughput network for peer to peer transactions, dApps, and digital assets."
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   title: {
     color: "#FFF",
-    fontSize: 48,
+    fontSize: 44,
     fontWeight: 600,
     textShadow: "0px 3px 5px #00000040",
     [theme.breakpoints.down("md")]: {
@@ -369,14 +369,14 @@ const MainSection = (props: Props) => {
                           className={`${classes.callToActionButton} ${classes.mobileOnly}`}
                           onClick={() => setShowQuoteMenu(true)}
                         >
-                          Learn More
+                          Get Started
                         </Button>
                         <Button
                           size="large"
                           className={`${classes.callToActionButton} ${classes.desktopOnly}`}
                           onClick={() => router.push("/#contact-us")}
                         >
-                          Learn More
+                          Get Started 
                         </Button>
                       </Grid>
                       <Grid item>
@@ -389,7 +389,6 @@ const MainSection = (props: Props) => {
                           Watch Video
                         </Button>
                       </Grid>
-
                     </Grid>
                   </Grid>
                 </Grid>

@@ -132,46 +132,30 @@ const FixedNavBar = (props: Props) => {
                     >
                         <Grid item>
                             <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/#services" underline="none">
-                                Our Services
+                                Introduction
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/#portfolio" underline="none">
-                                Our Portfolio
+                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/whitepaper" underline="none">
+                                Whitepaper
                             </Link>
                         </Grid>
                         <Grid item>
                             <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/process" underline="none">
-                                Our Process
+                                Innovation
                             </Link>
                         </Grid>
-                        {/* <Grid item>
-                      <Button
-                        variant="contained"
-                        className={classes.playVideoButton}
-                        startIcon={<PlayArrow className={classes.playIcon} />}
-                      >
-                        Watch Video
-                      </Button>
-                    </Grid> */}
                         <Grid item>
-                            <Button color="secondary" onClick={() => router.push("/contact")} className={classes.navBarButton}>Contact Us</Button>
+                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/process" underline="none">
+                                Participate
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/process" underline="none">
+                                FAQ
+                            </Link>
                         </Grid>
                     </Grid>
-                    {/* <Grid item>
-                  <Button
-                    variant="contained"
-                    className={classes.playVideoButton}
-                    startIcon={<PlayArrow className={classes.playIcon} />}
-                  >
-                    Watch Video
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Link href="/#contact-us">
-                    <Button className={classes.navBarButton}>Contact Us</Button>
-                  </Link>
-                </Grid> */}
                 </Grid>
                 <Grid className={classes.buttonContainer} item>
                     <IconButton onClick={toggleDrawer(drawerState)}>

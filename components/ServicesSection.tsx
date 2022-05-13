@@ -9,9 +9,9 @@ interface Props {
 
 }
 
-const description1 = "The Lynx network has an intutive design structure that will allow for a more efficient and scalable network of applicaitons to be built to power the decentrlized economy."
-const description2 = "At the heart of our network lays our subnets built to be able to provide fastest and most secure decentrlized arcitecture for deveoplers to host any application from Live streaming to video games"
-const description3 = "Improving application exposure and increasing traffic is essential for surpassing competition. Using comprehensive analytics and optimizing application processes, we are able to increase your website's exposure on search engines to help you generate more revenue."
+const description1 = "Currently, millions of people are unable to participate in blockchain applications due to several financial and technological discrepancies. The Lynx Network allows for everyone to be involved no matter what device they use. With just an Internet connection, anyone can browse a genuinely decentralized Internet while keeping the network safe and secure."
+const description2 = "Lynx isn’t just a currency, it’s a virtual economy. Lend your local computing power to others on the Lynx Network and get paid. Create, trade, and utilize any digital good you can imagine with a plethora of applications hosted on Lynx. The possibilities are endless when you are in charge of your own reality."
+const description3 = "You have entered a new frontier for decentralized applications. Develop user-focused applications with custom integrations and parameters. In addition to financial (DeFi), semi-financial, and governance applications, Lynx can support all types of apps related to gaming, live streaming, and a whole lot more."
 
 const useStyles = makeStyles((theme: Theme) => ({
     section: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         position: "absolute",
         bottom: "-0.5%",
         [theme.breakpoints.up("md")]: {
-            padding: "0px 200px",
+            padding: "0px 150px",
         },
         [theme.breakpoints.down("md")]: {
             padding: "0px 75px",
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         position: "absolute",
         top: "-0.5%",
         [theme.breakpoints.up("md")]: {
-            padding: "0px 200px",
+            padding: "0px 150px",
         },
         [theme.breakpoints.down("md")]: {
             padding: "0px 75px",
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         position: "absolute",
         top: "-0.5%",
         [theme.breakpoints.up("md")]: {
-            padding: "0px 200px",
+            padding: "0px 150px",
         },
         [theme.breakpoints.down("md")]: {
             padding: "0px 75px",
@@ -216,7 +216,7 @@ const ServicesSection = (props: Props) => {
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">
-                                            Speed, Scalability, Security
+                                        An Internet Accessible To Everyone
                                         </Typography>
                                     </Grid>
                                     <Grid style={{ display: "flex", justifyContent: "center", }} item>
@@ -234,14 +234,14 @@ const ServicesSection = (props: Props) => {
                             <Grid className={classes.imgSubsection} item sm={6} xs={12}>
                                 <FadeInSection>
                                     <Image
-                                        src="/isometric-imgs/design.svg"
+                                        src="/isometric-imgs/web.svg"
                                         width={366.38}
                                         height={400}
                                         objectFit="fill"
                                         // placeholder="blur"
                                         // blurDataURL="/logos/desktop-logo_10x10.png"
                                         quality={100}
-                                        alt='design aspect image'
+                                        alt='Web image'
                                     />
                                 </FadeInSection>
                             </Grid>
@@ -256,7 +256,7 @@ const ServicesSection = (props: Props) => {
                             <Grid style={{ transform: "scaleY(-1) scaleX(-1)", }} className={classes.imgSubsection} item sm={6} xs={12}>
                                 <FadeInSection>
                                     <Image
-                                        src="/isometric-imgs/coding.svg"
+                                        src="/isometric-imgs/business.svg"
                                         width={366.38}
                                         height={400}
                                         objectFit="fill"
@@ -264,7 +264,7 @@ const ServicesSection = (props: Props) => {
                                         // placeholder="blur"
                                         // blurDataURL="/logos/desktop-logo_10x10.png"
                                         quality={100}
-                                        alt='female coding image'
+                                        alt='IoE image'
                                     />
                                 </FadeInSection>
 
@@ -273,7 +273,7 @@ const ServicesSection = (props: Props) => {
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">
-                                            Application Specific Subneworks
+                                            The Internet of Everything
                                         </Typography>
                                     </Grid>
                                     <Grid style={{ display: "flex", justifyContent: "center", }} item>
@@ -300,7 +300,7 @@ const ServicesSection = (props: Props) => {
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">
-                                            Results Driven Optimization
+                                            Applications Just For You
                                         </Typography>
                                     </Grid>
                                     <Grid style={{ display: "flex", justifyContent: "center", }} item>
@@ -318,14 +318,14 @@ const ServicesSection = (props: Props) => {
                             <Grid className={classes.imgSubsection} item sm={6} xs={12}>
                                 <FadeInSection>
                                     <Image
-                                        src="/isometric-imgs/seo.svg"
+                                        src="/isometric-imgs/coding.svg"
                                         width={366.38}
                                         height={400}
                                         objectFit="fill"
                                         // placeholder="blur"
                                         // blurDataURL="/logos/desktop-logo_10x10.png"
                                         quality={100}
-                                        alt='SEO optimization image'
+                                        alt='Applications image'
                                     />
                                 </FadeInSection>
                             </Grid>
