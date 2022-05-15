@@ -5,7 +5,7 @@ import { Container } from "@material-ui/core";
 import MainSection from "../components/MainSection";
 const ServicesSection = dynamic(() => import("../components/ServicesSection"));
 const BrandsSection = dynamic(() => import("../components/BrandsSection"));
-const PortfolioSection = dynamic(() => import("../components/PortfolioSection"));
+const InnovationsSection = dynamic(() => import("../components/InnovationsSection"));
 const ServicesProvidedSection = dynamic(() => import('../components/ServicesProvidedSection'));
 const FooterSection = dynamic(() => import("../components/FooterSection"));
 const SubfooterSection = dynamic(() => import("../components/SubfooterSection"));
@@ -85,7 +85,7 @@ export default function Home() {
       <MainSection />
       <ServicesSection />
       <BrandsSection />
-      <PortfolioSection />
+      <InnovationsSection />
       <ServicesProvidedSection />
       <FooterSection />
       <SubfooterSection />

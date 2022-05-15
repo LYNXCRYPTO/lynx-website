@@ -4,7 +4,6 @@ import { Container } from "@material-ui/core";
 import MainSection from "../components/MainSection";
 import ServicesSection from "../components/ServicesSection";
 import BrandsSection from "../components/BrandsSection";
-import PortfolioSection from "../components/PortfolioSection";
 import ServicesProvidedSection from '../components/ServicesProvidedSection';
 import FooterSection from "../components/FooterSection";
 import SubfooterSection from "../components/SubfooterSection";

@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "center",
       backgroundColor: "#FFF",
       [theme.breakpoints.up("sm")]: {
-        padding: "250px 100px 80px 100px",
+        padding: "100px 100px 80px 100px",
       },
       [theme.breakpoints.down("sm")]: {
-        padding: "150px 75px 80px 75px",
+        padding: "50px 75px 80px 75px",
       },
       [theme.breakpoints.down("xs")]: {
-        padding: "150px 24px 80px 24px",
+        padding: "50px 24px 80px 24px",
       },
       borderTopColor: theme.palette.primary.main,
       borderTopStyle: "solid",
@@ -156,7 +156,7 @@ const ServicesProvidedSection = (props: Props) => {
   return (
     <div id="services" className={classes.root}>
       <div className={classes.background} />
-      <div className={classes.center}>
+      {/* <div className={classes.center}>
         <Grid container direction="column">
           <Grid item>
             <Typography className={classes.title} variant="h4" align="center">
@@ -188,7 +188,7 @@ const ServicesProvidedSection = (props: Props) => {
             </div>
           </Grid>
         </Grid>
-      </div>
+      </div> */}
     </div>
   );
 };
