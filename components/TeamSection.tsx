@@ -4,6 +4,7 @@ import { Button, Grid, Link, Typography } from '@material-ui/core';
 import Image from "next/image";
 import { useRouter } from "next/router";
 import QuoteMenu from "./QuoteMenu";
+import { LanguageOutlined } from "@material-ui/icons";
 
 interface Props {
 
@@ -66,7 +67,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         bottom: 0,
         // zIndex: 3,
         height: 900,
-        padding: "100px 24px",
+        padding: "50px 24px",
         [theme.breakpoints.down("xs")]: {
             padding: "100px 16px",
             height: 1000,
@@ -190,7 +191,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 }));
 
-const BrandsSection = (props: Props) => {
+const TeamSection = (props: Props) => {
     const classes = useStyles()
     const router = useRouter();
     const [showQuoteMenu, setShowQuoteMenu] = useState(false);
@@ -208,94 +209,41 @@ const BrandsSection = (props: Props) => {
                     <div className={classes.topBackgroundOverlay} />
                 </div>
                 <div className={classes.bottomBackground} />
-                <Grid className={classes.column} container direction="column" wrap="nowrap">
+                <Grid className={classes.column} container direction="column" alignItems="center" wrap="nowrap">
                     <Grid item>
                         <Typography className={classes.title} variant="h4" align="center">
-                            Premium Digital Agency Delivering
+                            An Open Source Protocol
                         </Typography>
                     </Grid>
                     <Grid item>
                         <Typography className={classes.subtitle} variant="h3" align="center">
-                            Superior Digital Experiences
+                            Built For Everyone
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Grid container direction="column" justifyContent="center" alignItems="center">
-                            <div className={classes.container}>
-                                <Typography className={classes.description} variant="h4" align="center">
-                                    From Start-Ups To Fortune 500, We Partner With Brands Of All Sizes
-                                </Typography>
-                                <Grid className={classes.grid} container direction="row" justifyContent="space-between" alignItems="center">
-                                    <Grid className={classes.companyIcon} item>
-                                        <Image
-                                            objectPosition="center center"
-                                            quality={100}
-                                            src="/company-logos/walmart.svg"
-                                            width={147}
-                                            height={35}
-                                            objectFit="cover"
-                                            alt="Walmart"
-                                        />
-                                    </Grid>
-                                    <Grid className={classes.companyIcon} item>
-                                        <Image
-                                            objectPosition="center center"
-                                            quality={100}
-                                            src="/company-logos/pg.svg"
-                                            width={76.56}
-                                            height={35}
-                                            objectFit="cover"
-                                            alt="pg company logo"
-                                        />
-                                    </Grid>
-                                    <Grid className={classes.companyIcon} item>
-                                        <Image
-                                            objectPosition="center center"
-                                            quality={100}
-                                            src="/company-logos/ibm.svg"
-                                            width={87.5}
-                                            height={35}
-                                            objectFit="cover"
-                                            alt="IBM logo"
-                                        />
-                                    </Grid>
-                                    <Grid className={classes.companyIcon} item>
-                                        <Image
-                                            objectPosition="center center"
-                                            quality={100}
-                                            src="/company-logos/verizon.svg"
-                                            width={154}
-                                            height={35}
-                                            objectFit="cover"
-                                            alt="Verizon logo"
-                                        />
-                                    </Grid>
-                                    <Grid className={classes.companyIcon} item>
-                                        <Image
-                                            objectPosition="center center"
-                                            quality={100}
-                                            src="/company-logos/intel.svg"
-                                            width={55}
-                                            height={35}
-                                            objectFit="cover"
-                                            alt="Intel logo"
-                                        />
-                                    </Grid>
-                                </Grid>
-                            </div>
-                        </Grid>
+                        <Image
+                            src="/isometric-imgs/team.svg"
+                            width={366.38}
+                            height={400}
+                            objectFit="fill"
+                            // placeholder="blur"
+                            // blurDataURL="/logos/desktop-logo_10x10.png"
+                            quality={100}
+                            alt='Web image'
+                            draggable={false}
+                        />
                     </Grid>
                     <Grid item>
                         <div className={classes.callToActionContainer}>
                             <Typography className={classes.callToActionText} variant="subtitle1" align="center">
-                                We Offer Very Flexible & Competitive Rates To Help Businesses Succeed
-                            </Typography>
+                                Help Us Shape The Future Of The Internet
+                                </Typography>
                             <Button className={classes.callToActionButtonMobile} variant="contained" onClick={toggleDrawer(showQuoteMenu)}>
-                                Request A Quote
-                            </Button>
-                            <Button className={classes.callToActionButton} variant="contained" onClick={() => router.push("/#contact-us")}>
-                                Request A Quote
-                            </Button>
+                                Join Our Team
+                                </Button>
+                            <Button className={classes.callToActionButton} variant="contained" onClick={() => router.push("/contact")}>
+                                Join Our Team
+                                </Button>
                         </div>
                     </Grid>
                 </Grid >
@@ -305,4 +253,4 @@ const BrandsSection = (props: Props) => {
     )
 }
 
-export default BrandsSection
+export default TeamSection

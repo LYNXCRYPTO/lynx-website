@@ -4,7 +4,7 @@ import { useTheme } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 import MainSection from "../components/MainSection";
 const ServicesSection = dynamic(() => import("../components/ServicesSection"));
-const BrandsSection = dynamic(() => import("../components/BrandsSection"));
+const BrandsSection = dynamic(() => import("../components/TeamSection"));
 const InnovationsSection = dynamic(() => import("../components/InnovationsSection"));
 const ServicesProvidedSection = dynamic(() => import('../components/ServicesProvidedSection'));
 const FooterSection = dynamic(() => import("../components/FooterSection"));

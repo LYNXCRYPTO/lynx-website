@@ -84,7 +84,7 @@ const SubfooterSection = (props: Props) => {
             </Grid>
             <Grid className={classes.citation} item>
                 <Typography style={{ fontSize: 14, fontWeight: 500, textAlign: "center" }} variant="subtitle1">
-                    <span style={{ fontWeight: 600 }}>© 2022 Protocoding LLC.</span> All rights reserved
+                    <span style={{ fontWeight: 600 }}>© 2022 Lynx Foundation.</span> All rights reserved
                 </Typography>
             </Grid>
         </Grid>

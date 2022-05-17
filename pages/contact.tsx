@@ -3,7 +3,7 @@ import { Theme, makeStyles, useTheme } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 import MainSection from "../components/MainSection";
 import ServicesSection from "../components/ServicesSection";
-import BrandsSection from "../components/BrandsSection";
+import BrandsSection from "../components/TeamSection";
 import ServicesProvidedSection from '../components/ServicesProvidedSection';
 import FooterSection from "../components/FooterSection";
 import SubfooterSection from "../components/SubfooterSection";

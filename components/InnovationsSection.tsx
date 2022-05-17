@@ -148,7 +148,7 @@ const InnovationsSection = (props: Props) => {
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
-                                            <Image src="/isometric-imgs/distributed-state-chain.svg" height={290} width={350} />
+                                            <Image src="/isometric-imgs/distributed-state-chain.svg" height={290} width={350} draggable="false" />
                                         </div>
                                         <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Distributed State Chain</Typography>
                                     </Grid>
@@ -160,7 +160,7 @@ const InnovationsSection = (props: Props) => {
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
-                                            <Image src="/isometric-imgs/proof-of-consensus.svg" height={290} width={350} />
+                                            <Image src="/isometric-imgs/proof-of-consensus.svg" height={290} width={350} draggable="false"/>
                                         </div>
                                         <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Proof of Consensus</Typography>
                                     </Grid>
@@ -172,7 +172,7 @@ const InnovationsSection = (props: Props) => {
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
-                                            <Image src="/isometric-imgs/parties.svg" height={290} width={350} />
+                                            <Image src="/isometric-imgs/parties.svg" height={290} width={350} draggable="false"/>
                                         </div>
                                         <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Application Specific Subnetworks</Typography>
                                     </Grid>

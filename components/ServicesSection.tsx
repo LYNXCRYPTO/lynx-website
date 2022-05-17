@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         },
     },
     topSectionOverlay: {
+        backgroundColor: "white",
         backgroundImage: "url('scenes/half-blob-scene.svg')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom center",
@@ -50,6 +51,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         },
     },
     middleSectionOverlay: {
+        backgroundColor: "white",
         backgroundImage: "url('scenes/blob-scene.svg')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom center",
@@ -80,6 +82,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         display: "flex",
     },
     bottomSectionOverlay: {
+        backgroundColor: "white",
         backgroundImage: "url('scenes/blob-scene.svg')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom center",
@@ -224,11 +227,11 @@ const ServicesSection = (props: Props) => {
                                             {description1}
                                         </Typography>
                                     </Grid>
-                                    <Grid className={classes.learnMoreButtonContainer} item>
+                                    {/* <Grid className={classes.learnMoreButtonContainer} item>
                                         <Button className={classes.learnMoreButton} onClick={() => router.push("/process/#design")}>
                                             Learn More
                                         </Button>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
                             <Grid className={classes.imgSubsection} item sm={6} xs={12}>
@@ -242,6 +245,7 @@ const ServicesSection = (props: Props) => {
                                         // blurDataURL="/logos/desktop-logo_10x10.png"
                                         quality={100}
                                         alt='Web image'
+                                        draggable={false}
                                     />
                                 </FadeInSection>
                             </Grid>
@@ -253,7 +257,7 @@ const ServicesSection = (props: Props) => {
                 <div className={classes.middleSectionOverlay}>
                     <Container style={{ display: "flex", alignItems: "center" }} maxWidth={'xl'}>
                         <Grid className={classes.row} container direction="row" justifyContent="center" spacing={2}>
-                            <Grid style={{ transform: "scaleY(-1) scaleX(-1)", }} className={classes.imgSubsection} item sm={6} xs={12}>
+                            <Grid style={{ transform: "scaleY(-1) scaleX(-1)", }} className={classes.imgSubsection} item sm={5} xs={12}>
                                 <FadeInSection>
                                     <Image
                                         src="/isometric-imgs/business.svg"
@@ -265,11 +269,12 @@ const ServicesSection = (props: Props) => {
                                         // blurDataURL="/logos/desktop-logo_10x10.png"
                                         quality={100}
                                         alt='IoE image'
+                                        draggable={false}
                                     />
                                 </FadeInSection>
-
                             </Grid>
-                            <Grid style={{ transform: "scaleY(-1)" }} className={classes.descriptionSubsection} item sm={6} xs={12}>
+                            <Grid item sm={2}/>
+                            <Grid style={{ transform: "scaleY(-1)" }} className={classes.descriptionSubsection} item sm={5} xs={12}>
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">
@@ -281,11 +286,11 @@ const ServicesSection = (props: Props) => {
                                             {description2}
                                         </Typography>
                                     </Grid>
-                                    <Grid className={classes.learnMoreButtonContainer} item>
+                                    {/* <Grid className={classes.learnMoreButtonContainer} item>
                                         <Button className={classes.learnMoreButton} onClick={() => router.push("/process/#development")}>
                                             Learn More
                                         </Button>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -308,11 +313,11 @@ const ServicesSection = (props: Props) => {
                                             {description3}
                                         </Typography>
                                     </Grid>
-                                    <Grid className={classes.learnMoreButtonContainer} item>
+                                    {/* <Grid className={classes.learnMoreButtonContainer} item>
                                         <Button className={classes.learnMoreButton} onClick={() => router.push("/process/#optimization")}>
                                             Learn More
                                         </Button>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
                             <Grid className={classes.imgSubsection} item sm={6} xs={12}>
@@ -326,6 +331,7 @@ const ServicesSection = (props: Props) => {
                                         // blurDataURL="/logos/desktop-logo_10x10.png"
                                         quality={100}
                                         alt='Applications image'
+                                        draggable={false}
                                     />
                                 </FadeInSection>
                             </Grid>

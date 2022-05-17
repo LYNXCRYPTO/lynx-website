@@ -369,17 +369,17 @@ const MainSection = (props: Props) => {
                           className={`${classes.callToActionButton} ${classes.mobileOnly}`}
                           onClick={() => setShowQuoteMenu(true)}
                         >
-                          Get Started
+                          Learn More
                         </Button>
                         <Button
                           size="large"
                           className={`${classes.callToActionButton} ${classes.desktopOnly}`}
                           onClick={() => router.push("/#contact-us")}
                         >
-                          Get Started 
+                          Learn More 
                         </Button>
                       </Grid>
-                      <Grid item>
+                      {/* <Grid item>
                         <Button
                           variant="contained"
                           className={classes.playVideoButton}
@@ -388,13 +388,13 @@ const MainSection = (props: Props) => {
                         >
                           Watch Video
                         </Button>
-                      </Grid>
+                      </Grid> */}
                     </Grid>
                   </Grid>
                 </Grid>
               </Grid>
               <Grid className={classes.mockups} item md={6} sm={12}>
-                <Image src="/isometric-imgs/laptop.svg" width={350} height={350} alt='Laptop main image' />
+                <Image src="/isometric-imgs/internet.svg" width={350} height={350} alt='Laptop main image' />
               </Grid>
             </Grid>
           </Grid>
