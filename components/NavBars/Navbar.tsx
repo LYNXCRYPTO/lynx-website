@@ -12,14 +12,6 @@ interface Props {
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
-    root: {
-        backgroundColor: "#FFF",
-        position: "relative",
-        height: 900,
-        [theme.breakpoints.down("xs")]: {
-            height: 800,
-        },
-    },
     desktopOnly: {
         [theme.breakpoints.down('sm')]: {
             display: 'none'
@@ -35,11 +27,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     floatingMenu: {
         height: 90,
+        maxWidth: "1440px !important",
         backgroundColor: "#FFF",
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "center",
         padding: "0px 32px",
+        [theme.breakpoints.up(1440)]: {
+            left: "calc((100vw - 1440px) / 2)"
+        },
         [theme.breakpoints.down("sm")]: {
             padding: "0px 16px",
         },
@@ -202,15 +198,15 @@ const NavBar = (props: Props) => {
             if (!firstFadeState) {
                 setfirstFadeState(true)
             }
-            setshowAppBar(true);
+            setshowAppBar(true)
         } else {
-            setshowAppBar(false);
+            setshowAppBar(false)
         }
     };
 
 
     return (
-        <Grid >
+        <Grid>
             {
                 firstFadeState && (
                     <AppBar
@@ -246,8 +242,8 @@ const NavBar = (props: Props) => {
                                 <Grid className={classes.linkContainer} item>
                                     <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item>
-                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/#services" underline="none">
-                                                Introduction
+                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/" underline="none">
+                                                Home
                                             </Link>
                                         </Grid>
                                         <Grid item>
@@ -256,11 +252,11 @@ const NavBar = (props: Props) => {
                                             </Link>
                                         </Grid>
                                         <Grid item>
-                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/process" underline="none">
-                                                Innovation
+                                            <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/#join-the-community" underline="none">
+                                                Join The Community
                                             </Link>
                                         </Grid>
-                                        <Grid item>
+                                        {/* <Grid item>
                                             <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/process" underline="none">
                                                 Participate
                                             </Link>
@@ -269,7 +265,7 @@ const NavBar = (props: Props) => {
                                             <Link rel="noopener" className={classes.navBarLinkFloatinNav} variant="body1" href="/process" underline="none">
                                                 FAQ
                                             </Link>
-                                        </Grid>
+                                        </Grid> */}
                                     </Grid>
                                 </Grid>
                                 <Grid className={classes.mobileNavContainer} item>

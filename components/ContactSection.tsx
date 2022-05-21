@@ -287,7 +287,7 @@ const ContactSection = (props: Props) => {
                                         }}
                                     />
                                 </Grid>
-                                <Grid item>
+                                {/* <Grid item>
                                     <TextField
                                         className={classes.textFieldBackground}
                                         id="companyname"
@@ -311,7 +311,7 @@ const ContactSection = (props: Props) => {
                                             },
                                         }}
                                     />
-                                </Grid>
+                                </Grid> */}
                                 <Grid item>
                                     <Grid container direction="row" spacing={2}>
                                         <Grid item sm={6} xs={12}>

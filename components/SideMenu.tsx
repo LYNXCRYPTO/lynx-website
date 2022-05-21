@@ -97,33 +97,33 @@ export default function SideMenu(props: Props) {
         <Divider />
         <List>
           <ListItem button className={classes.sideMenuButton}>
-            <Link rel="noopener" className={classes.link} href="/#services" underline="none">
+            <Link rel="noopener" className={classes.link} href="/" underline="none">
               <Typography className={classes.buttonText} variant="button">
-                Our Services
+                Home
               </Typography>
             </Link>
           </ListItem>
           <ListItem button className={classes.sideMenuButton}>
-            <Link rel="noopener" className={classes.link} href="/#portfolio" underline="none">
+            <Link rel="noopener" className={classes.link} href="/whitepaper" underline="none">
               <Typography className={classes.buttonText} variant="button">
-                Our Portfolio
+                Whitepaper
               </Typography>
             </Link>
           </ListItem>
           <ListItem button className={classes.sideMenuButton}>
-            <Link rel="noopener" className={classes.link} href="/process" underline="none">
+            <Link rel="noopener" className={classes.link} href="/#join-the-community" underline="none">
               <Typography className={classes.buttonText} variant="button">
-                Our Process
+                Join The Community
               </Typography>
             </Link>
           </ListItem>
-          <ListItem button className={classes.sideMenuButton}>
+          {/* <ListItem button className={classes.sideMenuButton}>
             <Link rel="noopener" className={classes.link} href="/contact" underline="none">
               <Typography className={classes.buttonText} variant="button">
                 Contact Us
               </Typography>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
         <div className={classes.root} />
       </SwipeableDrawer>

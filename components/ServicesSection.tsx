@@ -213,7 +213,7 @@ const ServicesSection = (props: Props) => {
         <Grid container direction="column">
             <Grid className={classes.section} item>
                 <div className={classes.topSectionOverlay}>
-                    <Container maxWidth={'xl'}>
+                    <Container maxWidth="md">
                         <Grid className={classes.row} container direction="row" justifyContent="center" spacing={2}>
                             <Grid className={classes.descriptionSubsection} item sm={6} xs={12}>
                                 <Grid container direction="column" justifyContent="center">
@@ -255,7 +255,7 @@ const ServicesSection = (props: Props) => {
             </Grid>
             <Grid className={classes.section} item>
                 <div className={classes.middleSectionOverlay}>
-                    <Container style={{ display: "flex", alignItems: "center" }} maxWidth={'xl'}>
+                    <Container style={{ display: "flex", alignItems: "center" }} maxWidth="md">
                         <Grid className={classes.row} container direction="row" justifyContent="center" spacing={2}>
                             <Grid style={{ transform: "scaleY(-1) scaleX(-1)", }} className={classes.imgSubsection} item sm={5} xs={12}>
                                 <FadeInSection>
@@ -299,7 +299,7 @@ const ServicesSection = (props: Props) => {
             </Grid>
             <Grid className={classes.section} item >
                 <div className={classes.bottomSectionOverlay}>
-                    <Container maxWidth={'xl'}>
+                    <Container maxWidth="md">
                         <Grid className={classes.row} container direction="row" justifyContent="center" spacing={2}>
                             <Grid className={classes.descriptionSubsection} item sm={6} xs={12}>
                                 <Grid container direction="column" justifyContent="center">

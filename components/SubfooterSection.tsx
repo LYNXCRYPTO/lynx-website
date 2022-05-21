@@ -51,33 +51,18 @@ const SubfooterSection = (props: Props) => {
             <Grid className={classes.navBar} item>
                 <Grid container direction="row" justifyContent="center" alignItems="center">
                     <Grid item>
-                        <Link rel="noopener" className={classes.footerLink} href="#services" variant="subtitle1" underline="none">
-                            Our Services
+                        <Link rel="noopener" className={classes.footerLink} href="/" variant="subtitle1" underline="none">
+                            Home
                         </Link>
                     </Grid>
                     <Grid item>
-                        <Link rel="noopener" className={classes.footerLink} href="/#portfolio" variant="subtitle1" underline="none">
-                            Our Portfolio
+                        <Link rel="noopener" className={classes.footerLink} href="/whitepaper" variant="subtitle1" underline="none">
+                            Whitepaper
                         </Link>
                     </Grid>
                     <Grid item>
-                        <Link rel="noopener" className={classes.footerLink} href="/process" variant="subtitle1" underline="none">
-                            Our Process
-                        </Link>
-                    </Grid>
-                    {/* <Grid item>
-                        <Link className={classes.footerLink} href="/#team" variant="subtitle1" underline="none">
-                            About Us
-                        </Link>
-                    </Grid> */}
-                    {/* <Grid item>
-                        <Link className={classes.footerLink} href="" variant="subtitle1" underline="none">
-                            Watch Video
-                        </Link>
-                    </Grid> */}
-                    <Grid item>
-                        <Link rel="noopener" className={classes.footerLink} href="/contact" variant="subtitle1" underline="none">
-                            Contact Us
+                        <Link rel="noopener" className={classes.footerLink} href="/#join-the-community" variant="subtitle1" underline="none">
+                            Join The Community
                         </Link>
                     </Grid>
                 </Grid>

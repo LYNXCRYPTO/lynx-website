@@ -1,0 +1,1 @@
+export default [`https://bitcoin.org/bitcoin.pdf`, `https://ethereum.org/en/whitepaper/`, `https://polkadot.network/PolkaDotPaper.pdf`, `https://www.scribd.com/document/561149781/Lynx-Yellow-Paper`, `https://en.wikipedia.org/wiki/Merkle_tree`, `https://en.wikipedia.org/wiki/Radix_tree#PATRICIA`]

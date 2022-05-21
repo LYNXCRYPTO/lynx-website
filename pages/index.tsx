@@ -17,7 +17,7 @@ export default function Home() {
   const theme = useTheme();
 
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container style={{maxWidth: 1440}} disableGutters>
       <Head>
         <title key="title">Protocoding - Expert Full Service Website Delivery At A Fraction Of The Cost</title>
         <meta name="theme-color" content={theme.palette.primary.main} />

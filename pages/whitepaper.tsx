@@ -12,7 +12,7 @@ export default function Home() {
 
     return (
         <>
-            <Container disableGutters maxWidth={false}>
+            <Container style={{maxWidth: 1440}} disableGutters>
                 <Head>
                     <title key="title">Lynx Whitepaper</title>
                     <meta name="theme-color" content={theme.palette.primary.main} />

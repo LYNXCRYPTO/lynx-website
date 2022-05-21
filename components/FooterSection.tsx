@@ -129,7 +129,7 @@ const FooterSection = (props: Props) => {
   const classes = useStyles();
 
   return (
-    <Grid id="contact-us" className={classes.root} container direction="column" justifyContent="center" alignItems="center">
+    <Grid id="join-the-community" className={classes.root} container direction="column" justifyContent="center" alignItems="center">
       <Typography className={classes.title} variant="h3" align="center">
         Want to Get Involved?
       </Typography>
@@ -175,10 +175,10 @@ const FooterSection = (props: Props) => {
         </Grid>
         <Grid item>
         <div className={classes.socialIconContainer}>
-          <Link rel="noopener" href="https://www.linkedin.com/company/lynx-protocol/" target="_blank">
+          <Link rel="noopener" href="https://www.reddit.com/r/LynxProtocol/" target="_blank">
             <Image
               className={classes.socialIcon}
-              src="/icons/linkedin.svg" height={50} width={50}
+              src="/icons/reddit.svg" height={50} width={50}
               alt="Linkedin logo" />
           </Link>
           </div>

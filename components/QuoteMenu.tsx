@@ -71,7 +71,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   formSubtitle: {
     fontSize: 16,
     fontWeight: 500,
-    margin: 16,
+    margin: 32,
+    [theme.breakpoints.down("xs")]: {
+      margin: 16,
+    },
   },
 }));
 
@@ -110,12 +113,12 @@ export default function SideMenu(props: Props) {
           </Grid>
           <Grid item>
             <Typography className={classes.formTitle} variant="h5" align="center">
-              Request A Quote
+              Join Our Team
             </Typography>
           </Grid>
           <Grid item>
             <Typography className={classes.formSubtitle} variant="body1" align="center">
-              Tell us about your project and our industry experts will respond within one business day
+              The Lynx Foundation is always looking for help to further develop the Lynx Protocol.
             </Typography>
           </Grid>
           <Grid item>

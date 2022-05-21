@@ -8,7 +8,7 @@ import SideMenu from '../SideMenu';
 
 
 interface Props {
-
+    isOpaque?: boolean,
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -16,6 +16,15 @@ const useStyles = makeStyles((theme: Theme) => ({
         height: 90,
         width: "100%",
         padding: "0px 32px",
+        [theme.breakpoints.down("sm")]: {
+            padding: "0px 16px",
+        },
+    },
+    opaqueFixedNavBar: {
+        height: 90,
+        width: "100%",
+        padding: "0px 32px",
+        backgroundColor: "#FFF",
         [theme.breakpoints.down("sm")]: {
             padding: "0px 16px",
         },
@@ -57,10 +66,15 @@ const useStyles = makeStyles((theme: Theme) => ({
         },
     },
     navBarLink: {
-        color: "#fff",
+        color: "#FFF",
         padding: "0px 16px",
         fontWeight: 500,
         textShadow: "0px 2px 5px #00000040",
+    },
+    opaqueNavBarLink: {
+        color: "#000",
+        padding: "0px 16px",
+        fontWeight: 500,
     },
     navBarButton: {
         backgroundColor: theme.palette.primary.light,
@@ -103,14 +117,24 @@ const FixedNavBar = (props: Props) => {
     return (
         <div>
             <Grid
-                className={classes.fixedNavBar}
+                className={props.isOpaque ? classes.opaqueFixedNavBar : classes.fixedNavBar}
+                // style={{backgroundColor: props.isOpaque ? "white" : "transparent"}}
                 container
                 direction="row"
                 justifyContent="space-between"
                 alignItems="center"
             >
                 <Grid className={classes.logo} item>
-                    <Link rel="noopener" href="/" underline="none">
+                    {props.isOpaque ? (<Link rel="noopener" href="/" underline="none">
+                        <Image
+                            src="/logos/logo-blue.svg"
+                            width={279.9}
+                            height={63.9}
+                            objectFit="fill"
+                            loading="eager"
+                            quality={100}
+                            alt='Protocoding logo white' />
+                    </Link>) : ( <Link rel="noopener" href="/" underline="none">
                         <Image
                             src="/logos/logo-white.svg"
                             width={279.9}
@@ -119,7 +143,7 @@ const FixedNavBar = (props: Props) => {
                             loading="eager"
                             quality={100}
                             alt='Protocoding logo white' />
-                    </Link>
+                    </Link>)}
                 </Grid>
                 <Grid item>
                     <Grid
@@ -130,31 +154,41 @@ const FixedNavBar = (props: Props) => {
                         alignItems="center"
                         wrap="nowrap"
                     >
-                        <Grid item>
-                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/#services" underline="none">
+                        {/* <Grid item>
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/#services" underline="none">
                                 Introduction
+                            </Link>
+                        </Grid> */}
+                        <Grid item>
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/" underline="none">
+                                Home
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/whitepaper" underline="none">
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/whitepaper" underline="none">
                                 Whitepaper
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/process" underline="none">
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/#join-the-community" underline="none">
+                                Join The Community
+                            </Link>
+                        </Grid>
+                        {/* <Grid item>
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/process" underline="none">
                                 Innovation
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/process" underline="none">
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/process" underline="none">
                                 Participate
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link rel="noopener" className={classes.navBarLink} variant="body1" href="/process" underline="none">
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/process" underline="none">
                                 FAQ
                             </Link>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Grid>
                 <Grid className={classes.buttonContainer} item>

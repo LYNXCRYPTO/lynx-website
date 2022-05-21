@@ -12,7 +12,7 @@
     animation: fadeOut 1s ease forwards;
 }
   
-  .backgroundAnimated {
+.backgroundAnimated {
     display: flex !important;
     animation: fadeIt 1s ease forwards;
     z-index: 0;

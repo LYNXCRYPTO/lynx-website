@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles, Theme, useTheme } from "@material-ui/core/styles";
 import {
     Grid,
     Typography,
@@ -126,7 +126,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 const FooterSection = (props: Props) => {
-    const classes = useStyles();
+    const classes = useStyles()
+    const theme = useTheme()
     const [failure, setFailure] = useState<string>("");
     const [success, setSuccess] = useState(null);
     const [submitted, setSubmitted] = useState(false);
@@ -264,7 +265,7 @@ const FooterSection = (props: Props) => {
                                 }}
                             />
                         </Grid>
-                        <Grid item>
+                        {/* <Grid item>
                             <TextField
                                 className={classes.textFieldBackground}
                                 id="companyname"
@@ -288,12 +289,13 @@ const FooterSection = (props: Props) => {
                                     },
                                 }}
                             />
-                        </Grid>
+                        </Grid> */}
                         <Grid item>
-                            <Grid className={classes.formRow} container direction="row" spacing={2} wrap="nowrap">
-                                <Grid item lg={6}>
+                            <Grid className={classes.formRow} container direction="row" spacing={2}>
+                                <Grid  item sm={6} xs={12}>
                                     <TextField
                                         className={classes.textFieldBackground}
+                                        style={{[theme.breakpoints.down("sm")]: {paddingBottom: 0},}}
                                         id="email"
                                         name="email"
                                         autoComplete="email"
@@ -316,7 +318,7 @@ const FooterSection = (props: Props) => {
                                         }}
                                     />
                                 </Grid>
-                                <Grid item lg={6}>
+                                <Grid style={{display: "flex", flex: 1}} item sm={6} xs={12}>
                                     <TextField
                                         className={classes.textFieldBackground}
                                         id="phone"

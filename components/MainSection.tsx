@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     // Primary Light Theme Color With 50% Opacity
     //backgroundColor: "#6398FB",
     [theme.breakpoints.down("sm")]: {
-      minHeight: "100vh",
+      minHeight: "80vh",
     },
     background: "linear-gradient(90deg, rgba(6,86,234,1) 0%, rgba(55,123,250,1) 25%, rgba(213,109,227,1) 50%, rgba(255,110,178,1) 75%, rgba(255,147,127,1) 100%);",
     display: "flex",
@@ -41,6 +41,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     bottom: 0,
     left: 0,
     height: "100%",
+    [theme.breakpoints.down("sm")]: {
+      height: "80%",
+    },
   },
   overlay: {
     height: "100%",
@@ -93,6 +96,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: "flex-end",
     flex: 1,
     marginLeft: 40,
+    [theme.breakpoints.down(1200)]: {
+      marginLeft: 0,
+    },
     [theme.breakpoints.down("sm")]: {
       justifyContent: "center",
       alignItems: "center",
@@ -135,19 +141,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     lineHeight: 2.0,
     textShadow: "0px 2px 5px #00000080",
     [theme.breakpoints.down("md")]: {
-      fontSize: 16,
+      fontSize: 18,
+      margin: "24px 0px",
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: 14,
+      fontSize: 18,
       textAlign: "center",
+      lineHeight: 1.5,
+      margin: "24px 24px",
     },
-    [theme.breakpoints.down(470)]: {
-      fontSize: 14,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 16,
       textAlign: "center",
-    },
-    [theme.breakpoints.down(400)]: {
-      fontSize: 13,
-      textAlign: "center",
+      lineHeight: 1.5,
+      margin: "24px 0px",
     },
   },
   mockups: {
@@ -166,9 +173,9 @@ const useStyles = makeStyles((theme: Theme) => ({
       maxWidth: 250,
       minWidth: 0,
     },
-    [theme.breakpoints.down(425)]: {
-      display: "none",
-    },
+    // [theme.breakpoints.down(425)]: {
+    //   display: "none",
+    // },
   },
   bannerContent: {
     display: "flex",
@@ -367,14 +374,14 @@ const MainSection = (props: Props) => {
                         <Button
                           size="large"
                           className={`${classes.callToActionButton} ${classes.mobileOnly}`}
-                          onClick={() => setShowQuoteMenu(true)}
+                          onClick={() => router.push("/whitepaper")}
                         >
                           Learn More
                         </Button>
                         <Button
                           size="large"
                           className={`${classes.callToActionButton} ${classes.desktopOnly}`}
-                          onClick={() => router.push("/#contact-us")}
+                          onClick={() => router.push("/whitepaper")}
                         >
                           Learn More 
                         </Button>

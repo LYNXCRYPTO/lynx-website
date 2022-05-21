@@ -241,7 +241,7 @@ const TeamSection = (props: Props) => {
                             <Button className={classes.callToActionButtonMobile} variant="contained" onClick={toggleDrawer(showQuoteMenu)}>
                                 Join Our Team
                                 </Button>
-                            <Button className={classes.callToActionButton} variant="contained" onClick={() => router.push("/contact")}>
+                            <Button className={classes.callToActionButton} variant="contained" onClick={toggleDrawer(showQuoteMenu)}>
                                 Join Our Team
                                 </Button>
                         </div>

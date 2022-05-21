@@ -144,7 +144,7 @@ const InnovationsSection = (props: Props) => {
                 <Grid item>
                     <Grid className={classes.row} container direction="row" justifyContent="center" alignItems="flex-start" spacing={4}>
                         <Grid item md={4}>
-                            <Link href="" underline="none">
+                            <Link href="/whitepaper#distributed-state-chain" underline="none">
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
@@ -156,7 +156,7 @@ const InnovationsSection = (props: Props) => {
                             </Link>
                         </Grid>
                         <Grid item md={4}>
-                            <Link href="" underline="none">
+                            <Link href="/whitepaper#proof-of-consensus-and-mining" underline="none">
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
@@ -168,7 +168,7 @@ const InnovationsSection = (props: Props) => {
                             </Link>
                         </Grid>
                         <Grid item md={4}>
-                            <Link href="" underline="none"> 
+                            <Link href="/whitepaper#parties:-application-specific-subnetworks" underline="none"> 
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
