@@ -401,7 +401,7 @@ const MainSection = (props: Props) => {
                 </Grid>
               </Grid>
               <Grid className={classes.mockups} item md={6} sm={12}>
-                <Image src="/isometric-imgs/internet.svg" width={350} height={350} alt='Laptop main image' />
+                <Image src="/isometric-imgs/internet.svg" width={350} height={350} alt='Laptop main image' draggable={false}/>
               </Grid>
             </Grid>
           </Grid>
