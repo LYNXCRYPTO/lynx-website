@@ -6,7 +6,6 @@ import {
 import React, { useState } from "react";
 import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
 import ServicesCard from "./Cards/ServicesCard";
-import { Services as servicedata } from "../data/ServicesData";
 import { useTheme } from "@material-ui/core/styles";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess"

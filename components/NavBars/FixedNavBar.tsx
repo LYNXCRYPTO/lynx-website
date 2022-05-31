@@ -59,7 +59,9 @@ const useStyles = makeStyles((theme: Theme) => ({
         },
     },
     logo: {
+        display: "flex",
         flex: 1,
+        justifyContent: 'flex-start',
         [theme.breakpoints.down("xs")]: {
             maxWidth: "75%",
             marginTop: 5
@@ -128,21 +130,22 @@ const FixedNavBar = (props: Props) => {
                     {props.isOpaque ? (<Link rel="noopener" href="/" underline="none">
                         <Image
                             src="/logos/logo-blue.svg"
-                            width={279.9}
+                            width={150}
                             height={63.9}
                             objectFit="fill"
                             loading="eager"
                             quality={100}
-                            alt='Protocoding logo white' />
-                    </Link>) : ( <Link rel="noopener" href="/" underline="none">
+                            alt='Lynx logo white' />
+                    </Link>) : (<Link rel="noopener" href="/" underline="none">
                         <Image
                             src="/logos/logo-white.svg"
-                            width={279.9}
+                            width={150}
                             height={63.9}
                             objectFit="fill"
+                            objectPosition="left center"
                             loading="eager"
                             quality={100}
-                            alt='Protocoding logo white' />
+                            alt='Lynx logo white' />
                     </Link>)}
                 </Grid>
                 <Grid item>

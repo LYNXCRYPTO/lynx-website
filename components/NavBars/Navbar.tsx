@@ -230,13 +230,13 @@ const NavBar = (props: Props) => {
                                     <Link rel="noopener" href="/" underline="none">
                                         <Image
                                             src="/logos/logo-blue.svg"
-                                            width={279.9}
+                                            width={150}
                                             height={63.9}
                                             objectFit="fill"
                                             loading="eager"
                                             onClick={() => window.scrollTo(0, 0)}
-                                            quality={85}
-                                            alt='Protocoding logo blue' />
+                                            quality={100}
+                                            alt='Lynx logo blue' />
                                     </Link>
                                 </Grid>
                                 <Grid className={classes.linkContainer} item>

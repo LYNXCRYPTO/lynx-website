@@ -1,12 +1,11 @@
 import React from "react";
-import SwipeableDrawer from "@material-ui/core/SwipeableDrawer/SwipeableDrawer";
 import { Theme, makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List/List";
 import ListItem from "@material-ui/core/ListItem/ListItem";
 import Divider from "@material-ui/core/Divider";
 import Image from "next/image";
-import { Link, Grid, IconButton } from "@material-ui/core";
+import { Link, Grid, IconButton, SwipeableDrawer } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import FooterSection from "./FooterSection";
 import QuoteForm from "./QuoteForm";
@@ -82,7 +81,7 @@ export default function SideMenu(props: Props) {
   const classes = useStyles();
 
   return (
-    <div >
+    <>
       <SwipeableDrawer
         anchor={"right"}
         open={props.drawerState}
@@ -96,12 +95,12 @@ export default function SideMenu(props: Props) {
               <Grid item>
                 <Image
                   src="/logos/logo-blue.svg"
-                  width={225}
+                  width={150}
                   height={50}
                   objectFit="fill"
                   loading="eager"
                   quality={100}
-                  alt='Protocoding logo blue'
+                  alt='Lynx logo blue'
                 />
               </Grid>
               <Grid item>
@@ -126,6 +125,6 @@ export default function SideMenu(props: Props) {
           </Grid>
         </Grid>
       </SwipeableDrawer >
-    </div >
+    </>
   );
 }
