@@ -19,7 +19,7 @@ export default function MyApp(props: any) {
   return (
     <React.Fragment>
       <Head>
-        <title key="title">Protocoding - Expert Full Service Website Delivery At A Fraction Of The Cost</title>
+        <title key="title">Lynx - A Truly Open and Decentralized Internet</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

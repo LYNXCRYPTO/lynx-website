@@ -468,7 +468,7 @@ const ContactSection = (props: Props) => {
                         height={50}
                         objectFit="fill"
                         quality={100}
-                        alt='Protocoding logo blue'
+                        alt='Lynx logo blue'
                     />
                     <Grid style={{ marginTop: 40 }} container direction="column" wrap="nowrap">
                         <Grid className={classes.informationItem} item>

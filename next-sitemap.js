@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://www.protocoding.com" || "https://example.com",
+  siteUrl: "https://www.lynxprotocol.org" || "https://example.com",
   generateRobotsTxt: true, // (optional)
   // ...other options
 };

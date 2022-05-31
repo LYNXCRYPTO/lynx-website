@@ -12,16 +12,16 @@ export default function Home() {
 
     return (
         <>
-            <Container style={{maxWidth: 1440}} disableGutters>
+            <Container style={{ maxWidth: 1440 }} disableGutters>
                 <Head>
-                    <title key="title">Lynx Whitepaper</title>
+                    <title key="title">Whitepaper | lynxprotocol.org</title>
                     <meta name="theme-color" content={theme.palette.primary.main} />
-                    <meta name="description" key="description" content="Our custom website development process is why we exceed our clients deliverables! Our many years of website development expirence help us build this proccess that streamlines the development cycle, devlivering clean production ready code in a timley matter." />
+                    <meta name="description" key="description" content="This document includes a core description of the Lynx Protocol with potential concepts to consider for implementation." />
                     <meta
                         name="keywords"
-                        content="Code, Coding, Website, Creation, Design, Delivery, Creation, SEO, UI, UX, Content, Full Service, Coding, Web, Website, process, our process"
+                        content="blockchain, cryptocurrency, crypto, blockchain-technology, bitcoin, ethereum, decentralization, peer-to-peer, network, p2p, P2P, mining, consensus, jordan lesson, Jordan, Lesson, whitepaper"
                     />
-                    <meta name="author" content="Protocoding" />
+                    <meta name="author" content="Lynx Protocol" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -56,23 +56,23 @@ export default function Home() {
                     {/* Open Graph */}
                     <meta
                         property="og:url"
-                        content={"https://protocoding.com"}
+                        content={"https://lynxprotocol.org"}
                         key="ogurl"
                     />
                     <meta property="og:image" content={"preview.jpg"} key="ogimage" />
                     <meta
                         property="og:site_name"
-                        content={"Protocoding"}
+                        content={"Lynx Protocol"}
                         key="ogsitename"
                     />
                     <meta
                         property="og:title"
-                        content={"Our Process"}
+                        content={"Whitepaper | Lynx Protocol"}
                         key="ogtitle"
                     />
                     <meta
                         property="og:description"
-                        content={"Our custom website development process is why we exceed our clients deliverables! Our many years of website development expirence help us build this proccess that streamlines the development cycle, devlivering clean production ready code in a timley matter."}
+                        content={"This document includes a core description of the Lynx Protocol with potential concepts to consider for implementation."}
                         key="ogdesc"
                     />
                 </Head>

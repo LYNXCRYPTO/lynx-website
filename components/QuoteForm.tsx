@@ -144,7 +144,7 @@ const FooterSection = (props: Props) => {
         } catch (e) {
             setFailure(
                 `Sending email failed. Please retry or send email manually to 
-      contact@protocoding.com`
+            lynxprotocolofficial@gmail.com`
             );
         }
     };
@@ -292,10 +292,10 @@ const FooterSection = (props: Props) => {
                         </Grid> */}
                         <Grid item>
                             <Grid className={classes.formRow} container direction="row" spacing={2}>
-                                <Grid  item sm={6} xs={12}>
+                                <Grid item sm={6} xs={12}>
                                     <TextField
                                         className={classes.textFieldBackground}
-                                        style={{[theme.breakpoints.down("sm")]: {paddingBottom: 0},}}
+                                        style={{ [theme.breakpoints.down("sm")]: { paddingBottom: 0 }, }}
                                         id="email"
                                         name="email"
                                         autoComplete="email"
@@ -318,7 +318,7 @@ const FooterSection = (props: Props) => {
                                         }}
                                     />
                                 </Grid>
-                                <Grid style={{display: "flex", flex: 1}} item sm={6} xs={12}>
+                                <Grid style={{ display: "flex", flex: 1 }} item sm={6} xs={12}>
                                     <TextField
                                         className={classes.textFieldBackground}
                                         id="phone"

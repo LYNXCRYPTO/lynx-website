@@ -114,7 +114,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 40,
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: 34,
+      fontSize: 30,
       textAlign: "center",
     },
     [theme.breakpoints.down(700)]: {
@@ -165,7 +165,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     maxWidth: "none",
     [theme.breakpoints.down("sm")]: {
       marginBottom: 24,
-      maxWidth: 300,
+      maxWidth: 250,
       minWidth: 0,
     },
     [theme.breakpoints.down(700)]: {
@@ -383,7 +383,7 @@ const MainSection = (props: Props) => {
                           className={`${classes.callToActionButton} ${classes.desktopOnly}`}
                           onClick={() => router.push("/whitepaper")}
                         >
-                          Learn More 
+                          Learn More
                         </Button>
                       </Grid>
                       {/* <Grid item>
@@ -401,14 +401,14 @@ const MainSection = (props: Props) => {
                 </Grid>
               </Grid>
               <Grid className={classes.mockups} item md={6} sm={12}>
-                <Image src="/isometric-imgs/internet.svg" width={350} height={350} alt='Laptop main image' draggable={false}/>
+                <Image src="/isometric-imgs/internet.svg" width={350} height={350} alt='Laptop main image' draggable={false} />
               </Grid>
             </Grid>
           </Grid>
         </Grid>
       </div >
       <QuoteMenu drawerState={showQuoteMenu} toggleDrawer={toggleDrawer} />
-      <Modal
+      {/* <Modal
         className={classes.modal}
         open={modalState}
         onClose={() => setModalState(false)}
@@ -416,7 +416,7 @@ const MainSection = (props: Props) => {
         <div className={classes.videoPlayerContainer}>
           <ReactPlayer className={classes.videoPlayer} url='https://www.youtube.com/watch?v=pMSlGoKUjDY' width='100%' height='100%' playing={true} loop={true} controls={false} />
         </div>
-      </Modal>
+      </Modal> */}
     </div >
   );
 };

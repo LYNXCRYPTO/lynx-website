@@ -3,12 +3,12 @@ import dynamic from 'next/dynamic';
 import { useTheme } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 import MainSection from "../components/MainSection";
-const ServicesSection = dynamic(() => import("../components/ServicesSection"));
-const BrandsSection = dynamic(() => import("../components/TeamSection"));
-const InnovationsSection = dynamic(() => import("../components/InnovationsSection"));
-const ServicesProvidedSection = dynamic(() => import('../components/ServicesProvidedSection'));
-const FooterSection = dynamic(() => import("../components/FooterSection"));
-const SubfooterSection = dynamic(() => import("../components/SubfooterSection"));
+import ServicesSection from "../components/ServicesSection"
+import BrandsSection from "../components/TeamSection"
+import InnovationsSection from "../components/InnovationsSection"
+import ServicesProvidedSection from '../components/ServicesProvidedSection'
+import FooterSection from "../components/FooterSection"
+import SubfooterSection from "../components/SubfooterSection"
 import NavBar from '../components/NavBars/Navbar'
 
 
@@ -17,16 +17,16 @@ export default function Home() {
   const theme = useTheme();
 
   return (
-    <Container style={{maxWidth: 1440}} disableGutters>
+    <Container style={{ maxWidth: 1440 }} disableGutters>
       <Head>
-        <title key="title">Protocoding - Expert Full Service Website Delivery At A Fraction Of The Cost</title>
+        <title key="title">Home | lynxprotocol.org</title>
         <meta name="theme-color" content={theme.palette.primary.main} />
-        <meta name="description" key="description" content="Having a strong digital presence has become a must for every business. At Protocoding we provide a full service web development team at a fraction of the cost! Whether it's UI/UX, website development, content creation, or SEO we take care of it all. We collaborate closely with our clients to make sure our deliverables are exactly as specified. Don't be limited in what you can create with chunky website builders. Our custom website design process eliminates all functionally hindrances and allows your website to run at blazing fast speeds. Request a quote today from Protocoding." />
+        <meta name="description" key="description" content="Lynx is a scalable and high throughput network for peer to peer transactions, dApps, and digital assets." />
         <meta
           name="keywords"
-          content="Code, Coding, Website, Creation, Design, Delivery, Creation, SEO, UI, UX, Content, Full Service, Coding, Web, Website, Protocoding, Proto, coding, proto, proto coding, lesson, ryan lesson, jordan lesson, home, home page"
+          content="blockchain, cryptocurrency, crypto, blockchain-technology, bitcoin, ethereum, decentralization, peer-to-peer, network, p2p, P2P, mining, consensus, jordan lesson, Jordan, Lesson, whitepaper"
         />
-        <meta name="author" content="Protocoding" />
+        <meta name="author" content="Lynx Protocol" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -61,23 +61,23 @@ export default function Home() {
         {/* Open Graph */}
         <meta
           property="og:url"
-          content={"https://protocoding.com"}
+          content={"https://lynxprotocol.org"}
           key="ogurl"
         />
         <meta property="og:image" content={"preview.jpg"} key="ogimage" />
         <meta
           property="og:site_name"
-          content={"Protocoding"}
+          content={"Lynx Protocol"}
           key="ogsitename"
         />
         <meta
           property="og:title"
-          content={"Protocoding - Expert Full Service Website Delivery At A Fraction Of The Cost"}
+          content={"Lynx - A Truly Open and Decentralized Internet"}
           key="ogtitle"
         />
         <meta
           property="og:description"
-          content={`Having a strong digital presence has become a must for every business. At Protocoding we provide a full service web development team at a fraction of the cost! Whether it's UI/UX, website development, content creation, or SEO we take care of it all. We collaborate closely with our clients to make sure our deliverables are exactly as specified. Don't be limited in what you can create with chunky website builders. Our custom website design process eliminates all functionally hindrances and allows your website to run at blazing fast speeds. Request a quote today from Protocoding.`}
+          content={`Lynx is a scalable and high throughput network for peer to peer transactions, dApps, and digital assets.`}
           key="ogdesc"
         />
       </Head>

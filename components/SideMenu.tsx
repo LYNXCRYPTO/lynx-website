@@ -86,12 +86,12 @@ export default function SideMenu(props: Props) {
         <div className={classes.title}>
           <Image
             src="/logos/logo-blue.svg"
-            width={225}
+            width={150}
             height={50}
             objectFit="fill"
             loading="eager"
             quality={100}
-            alt='Protocoding logo blue'
+            alt='Lynx logo blue'
           />
         </div>
         <Divider />

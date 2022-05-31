@@ -45,9 +45,11 @@ const useStyles = makeStyles((theme: Theme) => ({
         padding: "50px 0px",
         display: "flex",
         overflowY: "auto",
+        backgroundColor: "#FFF"
     },
     textContainer: {
         display: "block",
+        backgroundColor: "#FFF"
         // flex: 1,
     },
     textColumn: {
@@ -298,11 +300,12 @@ const WhitepaperSection = (props: Props) => {
                                 value={selectedSection}
                                 label="Table Of Contents"
                                 onChange={handleOpen}
+                                onClose={handleOpen}
                             >
                                 {WhitepaperData.map((item: any, index: number) => (
-                                        <MenuItem key={index} className={WhitepaperData[index].subsection ? classes.sectionSubtitleButton : classes.sectionTitleButton} button value={WhitepaperData[index].name} onClick={() => handleSectionClick(WhitepaperData[index].name)}>
-                                            <Typography style={selectedSection === WhitepaperData[index].name ? {color: theme.palette.primary.main} : {}} variant="subtitle1">{WhitepaperData[index].name}</Typography>
-                                        </MenuItem>
+                                    <MenuItem key={index} className={WhitepaperData[index].subsection ? classes.sectionSubtitleButton : classes.sectionTitleButton} button value={WhitepaperData[index].name} onClick={() => handleSectionClick(WhitepaperData[index].name)}>
+                                        <Typography style={selectedSection === WhitepaperData[index].name ? { color: theme.palette.primary.main } : {}} variant="subtitle1">{WhitepaperData[index].name}</Typography>
+                                    </MenuItem>
                                 ))}
                             </Select>
                         </FormControl>
@@ -503,7 +506,7 @@ const WhitepaperSection = (props: Props) => {
                         <Typography className={classes.tableOfContentsTitle} variant="subtitle1">Table of Contents</Typography>
                         {WhitepaperData.map((item: any, index: number) => (
                             <ListItem button key={index} className={WhitepaperData[index].subsection ? classes.sectionSubtitleButton : classes.sectionTitleButton} onClick={() => handleSectionClick(WhitepaperData[index].name)}>
-                                <Typography style={selectedSection === WhitepaperData[index].name ? {color: theme.palette.primary.main} : {}} variant="subtitle1">{WhitepaperData[index].name}</Typography>
+                                <Typography style={selectedSection === WhitepaperData[index].name ? { color: theme.palette.primary.main } : {}} variant="subtitle1">{WhitepaperData[index].name}</Typography>
                             </ListItem>
                         ))}
                     </List>
