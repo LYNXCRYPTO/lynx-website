@@ -108,3 +108,4 @@ package-lock.json
 sendgrid.env
 .env.local
 sendgrid.env
+.env

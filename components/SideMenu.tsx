@@ -86,8 +86,8 @@ export default function SideMenu(props: Props) {
         <div className={classes.title}>
           <Image
             src="/logos/logo-blue.svg"
-            width={150}
-            height={50}
+            width={225}
+            height={60}
             objectFit="fill"
             loading="eager"
             quality={100}

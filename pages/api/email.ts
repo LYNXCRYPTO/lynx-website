@@ -7,8 +7,8 @@ export default async function handler(req: Request, res: Response) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
   if (req.method === "POST") {
     const msg = {
-      to: "contact@protocoding.com", // Change to your recipient
-      from: "inquiry@protocoding.awsapps.com", // Change to your verified sender
+      to: "jordan@protocoding.com", // Change to your recipient
+      from: "lynxprotocolofficial@gmail.com", // Change to your verified sender
       subject: `${req.body.subject}`,
       text: `${req.body.email} ${req.body.message}`,
       html: `<div>

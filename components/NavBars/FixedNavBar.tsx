@@ -130,8 +130,8 @@ const FixedNavBar = (props: Props) => {
                     {props.isOpaque ? (<Link rel="noopener" href="/" underline="none">
                         <Image
                             src="/logos/logo-blue.svg"
-                            width={150}
-                            height={63.9}
+                            width={225}
+                            height={60}
                             objectFit="fill"
                             loading="eager"
                             quality={100}
@@ -139,8 +139,8 @@ const FixedNavBar = (props: Props) => {
                     </Link>) : (<Link rel="noopener" href="/" underline="none">
                         <Image
                             src="/logos/logo-white.svg"
-                            width={150}
-                            height={63.9}
+                            width={225}
+                            height={60}
                             objectFit="fill"
                             objectPosition="left center"
                             loading="eager"
