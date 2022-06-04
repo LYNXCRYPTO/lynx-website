@@ -3,4 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.protocoding.com
+Host: https://www.lynxprotocol.org
+
+# Sitemaps
+Sitemap: https://www.lynxprotocol.org/sitemap.xml

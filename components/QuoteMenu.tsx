@@ -82,49 +82,50 @@ export default function SideMenu(props: Props) {
 
   return (
     <>
-      <SwipeableDrawer
-        anchor={"right"}
-        open={props.drawerState}
-        disableDiscovery={true}
-        onClose={props.toggleDrawer(props.drawerState)}
-        onOpen={props.toggleDrawer(props.drawerState)}
-      >
-        <Grid className={classes.root} container direction="column">
-          <Grid className={classes.gridItem} item>
-            <Grid className={classes.title} container direction="row" justifyContent="space-between" alignItems="center" wrap="nowrap">
-              <Grid item>
-                <Image
-                  src="/logos/logo-blue.svg"
-                  width={150}
-                  height={50}
-                  objectFit="fill"
-                  loading="eager"
-                  quality={100}
-                  alt='Lynx logo blue'
-                />
-              </Grid>
-              <Grid item>
-                <IconButton onClick={props.toggleDrawer(props.drawerState, false)}>
-                  <ClearIcon style={{ height: 30, width: 30 }} />
-                </IconButton>
+      <React.Fragment>
+        <SwipeableDrawer
+          anchor="right"
+          open={props.drawerState}
+          onClose={props.toggleDrawer(props.drawerState)}
+          onOpen={props.toggleDrawer(props.drawerState)}
+        >
+          <Grid className={classes.root} container direction="column">
+            <Grid className={classes.gridItem} item>
+              <Grid className={classes.title} container direction="row" justifyContent="space-between" alignItems="center" wrap="nowrap">
+                <Grid item>
+                  <Image
+                    src="/logos/logo-blue.svg"
+                    width={225}
+                    height={60}
+                    objectFit="fill"
+                    loading="eager"
+                    quality={100}
+                    alt='Lynx logo blue'
+                  />
+                </Grid>
+                <Grid item>
+                  <IconButton onClick={props.toggleDrawer(props.drawerState, false)}>
+                    <ClearIcon style={{ height: 30, width: 30 }} />
+                  </IconButton>
+                </Grid>
               </Grid>
             </Grid>
+            <Grid item>
+              <Typography className={classes.formTitle} variant="h5" align="center">
+                Join Our Team
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.formSubtitle} variant="body1" align="center">
+                The Lynx Foundation is always looking for help to further develop the Lynx Protocol.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <QuoteForm />
+            </Grid>
           </Grid>
-          <Grid item>
-            <Typography className={classes.formTitle} variant="h5" align="center">
-              Join Our Team
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography className={classes.formSubtitle} variant="body1" align="center">
-              The Lynx Foundation is always looking for help to further develop the Lynx Protocol.
-            </Typography>
-          </Grid>
-          <Grid item>
-            <QuoteForm />
-          </Grid>
-        </Grid>
-      </SwipeableDrawer >
+        </SwipeableDrawer>
+      </React.Fragment>
     </>
-  );
+  )
 }
