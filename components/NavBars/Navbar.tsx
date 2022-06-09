@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         padding: 10
     },
     floatingMenu: {
-        height: 90,
+        height: 80,
         maxWidth: "1440px !important",
         backgroundColor: "#FFF",
         display: "flex",
@@ -211,7 +211,7 @@ const NavBar = (props: Props) => {
                 firstFadeState && (
                     <AppBar
                         position="fixed"
-                        elevation={24}
+                        elevation={16}
                         className={`${showAppBar ? styles.backgroundAnimated : styles.fadeOut} ${classes.floatingMenu}`}
                     >
                         <Toolbar style={{ width: "100%", padding: 0, }}>

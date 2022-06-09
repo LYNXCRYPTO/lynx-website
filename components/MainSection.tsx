@@ -15,7 +15,7 @@ import FixedNavBar from "./NavBars/FixedNavBar";
 interface Props { }
 
 const title = "A Truly Open and Decentralized Internet"
-const subtitle = "Lynx is a scalable and high throughput network for peer to peer transactions, dApps, and digital assets."
+const subtitle = "A Global Rapidly Scalable and Easily Accessible Blockchain Infrastructure for Developing Web3"
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
