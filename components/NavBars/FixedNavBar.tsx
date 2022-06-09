@@ -186,12 +186,12 @@ const FixedNavBar = (props: Props) => {
                             <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/process" underline="none">
                                 Participate
                             </Link>
-                        </Grid>
+                        </Grid> */}
                         <Grid item>
-                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/process" underline="none">
+                            <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/contact" underline="none">
                                 FAQ
                             </Link>
-                        </Grid> */}
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Grid className={classes.buttonContainer} item>
