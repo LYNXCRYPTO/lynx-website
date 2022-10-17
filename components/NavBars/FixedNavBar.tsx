@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     mobileMenuButton: {
         height: 30,
         width: 30,
+        color: "white",
         display: "block",
         [theme.breakpoints.down("md")]: {
             display: "block",
@@ -187,11 +188,11 @@ const FixedNavBar = (props: Props) => {
                                 Participate
                             </Link>
                         </Grid> */}
-                        <Grid item>
+                        {/* <Grid item>
                             <Link rel="noopener" className={props.isOpaque ? classes.opaqueNavBarLink : classes.navBarLink} variant="body1" href="/contact" underline="none">
                                 FAQ
                             </Link>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Grid>
                 <Grid className={classes.buttonContainer} item>

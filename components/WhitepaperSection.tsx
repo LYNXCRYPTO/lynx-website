@@ -337,7 +337,7 @@ const WhitepaperSection = (props: Props) => {
                         <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModernConsensusProtocols }} />
                         <Typography id="lynx" className={classes.sectionTitle} variant="subtitle1">Lynx</Typography>
                         <Typography className={classes.paragraph} variant="body1">{Lynx}</Typography>
-                        <Typography id="lynx-accounts" className={classes.sectionSubtitle} variant="subtitle1">Lynx Accounts</Typography>
+                        {/* <Typography id="lynx-accounts" className={classes.sectionSubtitle} variant="subtitle1">Lynx Accounts</Typography>
                         <Typography className={classes.paragraph} style={{ marginBottom: 16 }} variant="body1">{LynxAccounts[0]}</Typography>
                         <ul className={classes.unorderedList}>
                             <li className={classes.listItem}>
@@ -350,8 +350,8 @@ const WhitepaperSection = (props: Props) => {
                                 <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: LynxAccounts[3] }} />
                             </li>
                         </ul>
-                        <Typography className={classes.paragraph} variant="body1">{LynxAccounts[4]}</Typography>
-                        <Typography id="distributed-state-chain" className={classes.sectionSubtitle} variant="subtitle1">Distributed State Chain</Typography>
+                        <Typography className={classes.paragraph} variant="body1">{LynxAccounts[4]}</Typography> */}
+                        {/* <Typography id="distributed-state-chain" className={classes.sectionSubtitle} variant="subtitle1">Distributed State Chain</Typography>
                         <Image
                             src="/whitepaper/distributed-state-chain.svg"
                             width={1131}
@@ -380,8 +380,36 @@ const WhitepaperSection = (props: Props) => {
                                 <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: DistributedStateChain[5] }} />
                             </li>
                         </ul>
-                        <Typography className={classes.paragraph} variant="body1">{DistributedStateChain[6]}</Typography>
-                        <Typography id="proof-of-consensus-and-mining" className={classes.sectionSubtitle} variant="subtitle1">Proof-Of-Consensus and Mining</Typography>
+                        <Typography className={classes.paragraph} variant="body1">{DistributedStateChain[6]}</Typography> */}
+                        <Typography id="parties:-application-specific-subnetworks" className={classes.sectionSubtitle} variant="subtitle1">Parties: Application Specific Subnetworks</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: Parties }} />
+                        <Typography id="applications" className={classes.sectionTitle} variant="subtitle1">Applications</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: Applications }} />
+                        <Typography id="freemium-application-models" className={classes.sectionSubtitle} variant="subtitle1">Freemium Application Models</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: FreemiumApplicationModels }} />
+                        <Typography id="video-games" className={classes.sectionSubtitle} variant="subtitle1">Video Games</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: VideoGames }} />
+                        <Typography id="video-streaming" className={classes.sectionSubtitle} variant="subtitle1">Video Streaming</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: VideoStreaming }} />
+                        <Typography id="high-frequency-trading" className={classes.sectionSubtitle} variant="subtitle1">High Frequency Trading</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: HighFrequencyTrading }} />
+                        <Typography id="decentralized-health-monitoring" className={classes.sectionSubtitle} variant="subtitle1">Decentralized Health Monitoring</Typography>
+                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: DecentralizedHealthMonitoring }} />
+                        <Typography id="miscellanea-and-concerns" className={classes.sectionTitle} variant="subtitle1">Miscellanea and Concerns</Typography>
+                        {/* <Typography id="modifying-a-distributed-state-chain" className={classes.sectionSubtitle} variant="subtitle1">Modifying a Distributed State Chain</Typography>
+                        <Typography className={classes.paragraph} style={{ marginBottom: 16 }} variant="body1">{ModifyingADistributedStateChain[0]}</Typography>
+                        <ul className={classes.unorderedList}>
+                            <li className={classes.listItem}>
+                                <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModifyingADistributedStateChain[1] }} />
+                            </li>
+                            <li className={classes.listItem}>
+                                <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModifyingADistributedStateChain[2] }} />
+                            </li>
+                            <li className={classes.listItem}>
+                                <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModifyingADistributedStateChain[3] }} />
+                            </li>
+                        </ul> */}
+                        <Typography id="proof-of-consensus-and-mining" className={classes.sectionSubtitle} variant="subtitle1">Proof-Of-Consensus</Typography>
                         <Image
                             src="/whitepaper/proof-of-consensus.png"
                             width={1350}
@@ -410,11 +438,11 @@ const WhitepaperSection = (props: Props) => {
                                 <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ProofOfConsensus[5] }} />
                             </li>
                         </ol>
-                        <Typography className={classes.paragraph} variant="body1">{ProofOfConsensus[6]}</Typography>
-                        <MathJaxContext config={config}>
+                        {/* <Typography className={classes.paragraph} variant="body1">{ProofOfConsensus[6]}</Typography> */}
+                        {/* <MathJaxContext config={config}>
                             <MathJax className={classes.equation}>{`${ProofOfConsensus[7]}`}</MathJax>
-                        </MathJaxContext>
-                        <ul className={classes.variableList} style={{ marginBottom: 24 }}>
+                        </MathJaxContext> */}
+                        {/* <ul className={classes.variableList} style={{ marginBottom: 24 }}>
                             <li className={classes.listItem}>
                                 <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ProofOfConsensus[8] }} />
                             </li>
@@ -430,37 +458,9 @@ const WhitepaperSection = (props: Props) => {
                             <li className={classes.listItem}>
                                 <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ProofOfConsensus[12] }} />
                             </li>
-                        </ul>
-                        <Typography id="parties:-application-specific-subnetworks" className={classes.sectionSubtitle} variant="subtitle1">Parties: Application Specific Subnetworks</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: Parties }} />
-                        <Typography id="applications" className={classes.sectionTitle} variant="subtitle1">Applications</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: Applications }} />
-                        <Typography id="freemium-application-models" className={classes.sectionSubtitle} variant="subtitle1">Freemium Application Models</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: FreemiumApplicationModels }} />
-                        <Typography id="video-games" className={classes.sectionSubtitle} variant="subtitle1">Video Games</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: VideoGames }} />
-                        <Typography id="video-streaming" className={classes.sectionSubtitle} variant="subtitle1">Video Streaming</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: VideoStreaming }} />
-                        <Typography id="high-frequency-trading" className={classes.sectionSubtitle} variant="subtitle1">High Frequency Trading</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: HighFrequencyTrading }} />
-                        <Typography id="decentralized-health-monitoring" className={classes.sectionSubtitle} variant="subtitle1">Decentralized Health Monitoring</Typography>
-                        <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: DecentralizedHealthMonitoring }} />
-                        <Typography id="miscellanea-and-concerns" className={classes.sectionTitle} variant="subtitle1">Miscellanea and Concerns</Typography>
+                        </ul> */}
                         <Typography id="energy-efficiency" className={classes.sectionSubtitle} variant="subtitle1">Energy Efficiency</Typography>
                         <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: EnergyEfficiency }} />
-                        <Typography id="modifying-a-distributed-state-chain" className={classes.sectionSubtitle} variant="subtitle1">Modifying a Distributed State Chain</Typography>
-                        <Typography className={classes.paragraph} style={{ marginBottom: 16 }} variant="body1">{ModifyingADistributedStateChain[0]}</Typography>
-                        <ul className={classes.unorderedList}>
-                            <li className={classes.listItem}>
-                                <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModifyingADistributedStateChain[1] }} />
-                            </li>
-                            <li className={classes.listItem}>
-                                <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModifyingADistributedStateChain[2] }} />
-                            </li>
-                            <li className={classes.listItem}>
-                                <Typography className={classes.paragraph} variant="body1" dangerouslySetInnerHTML={{ __html: ModifyingADistributedStateChain[3] }} />
-                            </li>
-                        </ul>
                         <Typography className={classes.paragraph} variant="body1">{ModifyingADistributedStateChain[4]}</Typography>
                         <Typography id="51%-attacks" className={classes.sectionSubtitle} variant="subtitle1">51% Attacks</Typography>
                         <Typography className={classes.paragraph} variant="body1">{Attacks[0]}</Typography>

@@ -11,7 +11,8 @@ interface Props {
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
         // backgroundColor: theme.palette.primary.main,
-        background: "linear-gradient(180deg, rgba(55,123,250,1) 14.29%, rgba(213,109,227,1) 28.57%, rgba(255,147,127,1) 57.14%, rgba(255,110,178,1) 71.42%, rgba(213,109,227,1) 85.71%, rgba(55,123,250,1) 100%);",
+        // background: "linear-gradient(180deg, rgba(55,123,250,1) 14.29%, rgba(213,109,227,1) 28.57%, rgba(255,147,127,1) 57.14%, rgba(255,110,178,1) 71.42%, rgba(213,109,227,1) 85.71%, rgba(55,123,250,1) 100%);",
+        backgroundColor: "rgba(70, 48, 228, 1);",
         backgroundRepeat: "repeat",
         backgroundPosition: "center bottom",
         [theme.breakpoints.up("md")]: {
@@ -133,7 +134,7 @@ const InnovationsSection = (props: Props) => {
             <Grid className={classes.root} container direction="column" alignItems="center">
                 <Grid item xs={12}>
                     <Typography className={classes.title} variant="h3" align="center">
-                        Powering the Lynx Network
+                        Powering the Lynx Blockchain
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
@@ -144,25 +145,25 @@ const InnovationsSection = (props: Props) => {
                 <Grid item>
                     <Grid className={classes.row} container direction="row" justifyContent="center" alignItems="flex-start" spacing={4}>
                         <Grid item md={4}>
-                            <Link href="/whitepaper#distributed-state-chain" underline="none">
+                            <Link href="/whitepaper" underline="none">
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
-                                            <Image src="/isometric-imgs/distributed-state-chain.svg" height={290} width={350} draggable="false" />
+                                            <Image src="/isometric-imgs/parties.svg" height={290} width={350} draggable="false" />
                                         </div>
-                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Distributed State Chain</Typography>
+                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Snowball Consensus</Typography>
                                     </Grid>
                                 </div>
                             </Link>
                         </Grid>
                         <Grid item md={4}>
-                            <Link href="/whitepaper#proof-of-consensus-and-mining" underline="none">
+                            <Link href="/whitepaper" underline="none">
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
                                             <Image src="/isometric-imgs/proof-of-consensus.svg" height={290} width={350} draggable="false"/>
                                         </div>
-                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Proof of Consensus</Typography>
+                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Modified Proof of History</Typography>
                                     </Grid>
                                 </div>
                             </Link>
@@ -172,9 +173,9 @@ const InnovationsSection = (props: Props) => {
                                 <div className={classes.innovationCard}>
                                     <Grid container direction="column" wrap="nowrap">
                                         <div className={classes.innovationImage}>
-                                            <Image src="/isometric-imgs/parties.svg" height={290} width={350} draggable="false"/>
+                                            <Image src="/isometric-imgs/distributed-state-chain.svg" height={290} width={350} draggable="false"/>
                                         </div>
-                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Application Specific Subnetworks</Typography>
+                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Subnetworks</Typography>
                                     </Grid>
                                 </div>
                             </Link>

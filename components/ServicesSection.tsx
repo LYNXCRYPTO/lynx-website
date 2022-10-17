@@ -273,8 +273,8 @@ const ServicesSection = (props: Props) => {
                                     />
                                 </FadeInSection>
                             </Grid>
-                            <Grid item sm={2}/>
-                            <Grid style={{ transform: "scaleY(-1)" }} className={classes.descriptionSubsection} item sm={5} xs={12}>
+                            <Grid item sm={1}/>
+                            <Grid style={{ transform: "scaleY(-1)", display: "flex", }} className={classes.descriptionSubsection} item sm={6} xs={12}>
                                 <Grid container direction="column" justifyContent="center">
                                     <Grid item>
                                         <Typography className={classes.title} variant="h3">

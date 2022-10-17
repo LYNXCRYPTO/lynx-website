@@ -15,17 +15,20 @@ import FixedNavBar from "./NavBars/FixedNavBar";
 interface Props { }
 
 const title = "A Truly Open and Decentralized Internet"
-const subtitle = "A Global Rapidly Scalable and Easily Accessible Blockchain Infrastructure for Developing Web3"
+const subtitle = "Lynx is a fast and user-friendly blockchain. Our blockchain supports Ethereum smart contracts with sub-second finality and minimal gas costs."
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    height: 600,
+    height: 625,
     // Primary Light Theme Color With 50% Opacity
     //backgroundColor: "#6398FB",
     [theme.breakpoints.down("sm")]: {
-      minHeight: "80vh",
+      minHeight: "80vh", 
+      // background: "linear-gradient(90deg, rgb(73, 46, 255) 0%, rgba(121,71,222,1) 50%, rgba(213,109,227,1) 100%);",
     },
-    background: "linear-gradient(90deg, rgba(6,86,234,1) 0%, rgba(55,123,250,1) 25%, rgba(213,109,227,1) 50%, rgba(255,110,178,1) 75%, rgba(255,147,127,1) 100%);",
+    // background: "linear-gradient(90deg, rgb(73, 46, 255) 0%, rgba(121,71,222,1) 25%,  rgba(255,110,178,1) 75%);",
+    // background: "linear-gradient(90deg, rgb(70, 48, 228) 0%, rgba(90, 60, 228, 1) 33%,  rgba(103, 63, 228, 1) 66%, rgba(122, 71, 224, 1) 100%);",
+    backgroundColor: "rgba(70, 48, 228, 1);",
     display: "flex",
     // jusitfyContent: "flex-end",
     // borderBottomLeftRadius: 25,
@@ -36,13 +39,41 @@ const useStyles = makeStyles((theme: Theme) => ({
   shape: {
     display: "flex",
     width: "100%",
-    position: "absolute",
-    right: 0,
-    bottom: 0,
-    left: 0,
     height: "100%",
+    overflow: "hidden",
+    [theme.breakpoints.up(960)]: {
+      position: "absolute",
+      right: 0,
+      bottom: 0,
+      top: 0,
+    },
+    [theme.breakpoints.down(960)]: {
+      position: "absolute",
+      right: 0,
+      bottom: 0,
+      left: 0,
+    },
     [theme.breakpoints.down("sm")]: {
       height: "80%",
+      display: "flex"
+    },
+  },
+  wave: {
+    display: "none",
+    [theme.breakpoints.up(960)]: {
+      display: "none",
+    },
+    [theme.breakpoints.down(960)]: {
+      display: "flex",
+    },
+  },
+  steps: {
+    display: "flex",
+    [theme.breakpoints.up(960)]: {
+      display: "flex",
+    },
+    [theme.breakpoints.down(960)]: {
+      display: "none",
     },
   },
   overlay: {
@@ -65,7 +96,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   callToActionButton: {
-    color: theme.palette.primary.dark,
+    color: "rgba(70, 48, 228, 1);",
     fontWeight: 'bold',
     backgroundColor: "#FFF",
     padding: "0px 8px",
@@ -134,24 +165,24 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   subtitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 500,
     color: "#F8F8F8",
     margin: "24px 0px",
-    lineHeight: 2.0,
+    lineHeight: 1.75,
     textShadow: "0px 2px 5px #00000080",
     [theme.breakpoints.down("md")]: {
-      fontSize: 18,
+      fontSize: 20,
       margin: "24px 0px",
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: 18,
+      fontSize: 20,
       textAlign: "center",
       lineHeight: 1.5,
       margin: "24px 24px",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 16,
+      fontSize: 18,
       textAlign: "center",
       lineHeight: 1.5,
       margin: "24px 0px",
@@ -163,15 +194,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     flex: 1,
     minWidth: 400,
     maxWidth: "none",
+    [theme.breakpoints.down(960)]: {
+      display: "none",
+    },
     [theme.breakpoints.down("sm")]: {
       marginBottom: 24,
       maxWidth: 250,
       minWidth: 0,
+      display: "none",
     },
     [theme.breakpoints.down(700)]: {
       marginBottom: 24,
-      maxWidth: 250,
+      maxWidth: 225,
       minWidth: 0,
+      display: "none",
     },
     // [theme.breakpoints.down(425)]: {
     //   display: "none",
@@ -326,16 +362,27 @@ const MainSection = (props: Props) => {
     <div>
       <div className={classes.root}>
         <div className={classes.shape} >
+          <div className={classes.wave}>
           <Image
-            src="/scenes/layered-waves.svg"
+            src="/scenes/layered-waves-mobile.svg"
             objectPosition="bottom center"
             objectFit="cover"
             layout="fill"
             loading="eager"
             quality={100}
             alt='layered waves' />
+          </div>
+          <div className={classes.steps}>
+          <Image
+            src="/scenes/layered-steps.svg"
+            objectPosition="bottom center"
+            objectFit="cover"
+            layout="fill"
+            loading="eager"
+            quality={100}
+            alt='layered waves' />
+          </div>
         </div>
-
         <Grid
           className={classes.overlay}
           container

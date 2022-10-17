@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom center",
         backgroundSize: "cover",
+        filter: "brightness(0) saturate(100%) invert(14%) sepia(79%) saturate(5463%) hue-rotate(250deg) brightness(89%) contrast(96%);",
     },
     column: {
         display: "flex",

@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundPosition: "bottom right",
     backgroundSize: "cover",
   },
+  logo: {
+    filter: "brightness(0) saturate(100%) invert(14%) sepia(79%) saturate(5463%) hue-rotate(250deg) brightness(89%) contrast(96%);",
+  },
   title: {
     minHeight: 100,
     display: "flex",
@@ -85,6 +88,7 @@ export default function SideMenu(props: Props) {
       >
         <div className={classes.title}>
           <Image
+            className={classes.logo}
             src="/logos/logo-blue.svg"
             width={225}
             height={60}

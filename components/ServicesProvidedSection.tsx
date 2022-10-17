@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundPosition: "bottom center",
       backgroundSize: "cover",
       transform: "scaleY(-1)",
+      filter: "brightness(0) saturate(100%) invert(14%) sepia(79%) saturate(5463%) hue-rotate(250deg) brightness(89%) contrast(96%);",
     },
     imageList: {
       maxWidth: 400,

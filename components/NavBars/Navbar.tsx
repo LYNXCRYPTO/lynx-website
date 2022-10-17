@@ -122,6 +122,9 @@ const useStyles = makeStyles((theme: Theme) => ({
             display: "none",
         },
     },
+    logo: {
+      filter: "brightness(0) saturate(100%) invert(14%) sepia(79%) saturate(5463%) hue-rotate(250deg) brightness(89%) contrast(96%);",
+    },
     logoContainer: {
         display: "flex",
         flex: 1,
@@ -211,7 +214,7 @@ const NavBar = (props: Props) => {
                 firstFadeState && (
                     <AppBar
                         position="fixed"
-                        elevation={16}
+                        elevation={8}
                         className={`${showAppBar ? styles.backgroundAnimated : styles.fadeOut} ${classes.floatingMenu}`}
                     >
                         <Toolbar style={{ width: "100%", padding: 0, }}>
@@ -229,6 +232,7 @@ const NavBar = (props: Props) => {
                                 <Grid className={classes.logoContainer} item>
                                     <Link rel="noopener" href="/" underline="none">
                                         <Image
+                                            className={classes.logo}
                                             src="/logos/logo-blue.svg"
                                             width={225}
                                             height={60}
