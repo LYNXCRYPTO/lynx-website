@@ -175,7 +175,7 @@ const InnovationsSection = (props: Props) => {
                                         <div className={classes.innovationImage}>
                                             <Image src="/isometric-imgs/distributed-state-chain.svg" height={290} width={350} draggable="false"/>
                                         </div>
-                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">Subnetworks</Typography>
+                                        <Typography className={classes.innovationTitle} variant="subtitle1" align="center">AppChains</Typography>
                                     </Grid>
                                 </div>
                             </Link>
